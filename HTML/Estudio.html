@@ -2,28 +2,56 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Icono de la página-->
-    <link rel="icon" href="../HTML/IMG/cerebro.jpg" type="image/jpg">
+    <link rel="icon" href="../IMG/cerebro.jpg" type="image/jpg">
     <title>Estudio de nuevas generaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 </head>
 
 <body>
-    <!--Añadir mas botones para el periódico-->
     <nav>
-        <a href="index.html">INICIO</a>
+        <!--Desplegable con las RRSS y el buscador # para realizar acción-->
+        <a href="#dropdown-content" class="dropbtn">
+            <p class="line"></p>
+            <p class="line"></p>
+            <p class="line"></p>
+        </a>
+        <ul id="dropdown-content" class="dropdown-content">
+            <li><a href="#close"><i class="fas fa-times"></i></a></li>
+            <li>
+                <form>
+                    <!--Formulario para buscar en la web--> 
+                    <input type="search" placeholder="Buscar en el sitio...">
+                    <button type="submit" id="buscar"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            <li class="medio">Sigue a Daily Kiss</li>
+            <li class="medio"><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="medio"><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="medio"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+        <a href="index.html" target="_blank">INICIO</a>
     </nav>
+    <header>
+        <h4>Nuevas generaciones en decadencia</h4>
+    </header>
     <main>
         <!--Noticia elegida-->
         <article>
-            <h4>Nuevas generaciones en decadencia</h4>
             <h1><b>Un estudio confirma que las nuevas generaciones tienen peor salud mental</b></h1>
             <p>Un trabajo hecho en Australia corrobora una tendencia que se había empezado a detectar mucho antes de la
                 aparición de internet</p>
-            <hr width="50%" color="blue" />
-            <img src="../HTML/IMG/estudio.jpg" alt="estudio.jpg" title="Estudio" width="50%" />
-            <hr width="50%" color="blue" />
+            <hr/>
+            <img src="../IMG/estudio.jpg" alt="Manos desatando hilos encima de un dibujo de una cabeza" title="Estudio de salud mental" width="50%" />
+            <hr/>
             <p>La revista científica PNAS publica este lunes un estudio en el que se analizan datos de 27.572 personas
                 en Australia que muestra un empeoramiento de la salud mental entre los grupos de población más jóvenes.
                 Aunque el deterioro se había detectado cuando se analizaba toda la población, los autores de este
@@ -58,32 +86,14 @@
                         Por qué deberíamos cambiar nuestra relación con las redes sociales para mejorar nuestra salud
                         mental y cómo hacerlo</a></li>
             </ol>
+            <img class = "sinfondo" src="../IMG/publi1.webp" alt="Publicidad de varias empresas">
         </aside>
     </main>
-     <!-- Info adicional de la web como RRSS como despegable-->
-     <footer>
-        <ul>
-            <li>Síguenos
-                <!--Enlaces a RRSS (incluir fotos con css para adaptar el tamaño a la página)-->
-                <ul>
-                    <li><a href="https://www.facebook.com/?locale=es_ES">Facebook</a></li>
-                    <li><a href="https://twitter.com/?lang=es">X</a></li>
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                </ul>
-            </li>
-            <li>Secciones
-                <!--Enlaces para info legal y suscripciones-->
-                <ul>
-                    <li><a href="https://elpais.com/estaticos/aviso-legal/">Aviso legal</a></li>
-                    <li><a
-                            href="https://elpais.com/suscripciones/#/campaign?prod=SUSDIG&o=boton_cab&prm=suscrip_cabecera_el-pais&backURL=https%3A%2F%2Felpais.com%2Fsalud-y-bienestar%2F2023-11-27%2Fun-estudio-confirma-que-las-nuevas-generaciones-tienen-peor-salud-mental.html">
-                            Suscripciones</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <!--Será en forma de botón y con una flecha hacia arriba-->
-        <a href="#top">Subir</a>
+    <!-- Info adicional-->
+    <footer>
+        <p>Si necesitas ayuda llama al 913 33 33 33 o al 024</p>
+        <p>© 2024 Daily Kiss</p>
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </footer>
 </body>
 

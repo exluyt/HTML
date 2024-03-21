@@ -1,0 +1,280 @@
+/* FILEPATH: /c:/Users/Kiss/OneDrive/Escritorio/kissArpad_PeriodicoCSS/CSS/style.css */
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    background-image: url('../IMG/fondomain.png');
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #017DB3;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    border: 2px solid #8CD4EA;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.26);
+}
+
+/* Estilos para los enlaces y botones de la barra de navegación */
+nav a,
+button {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 1s ease;
+    border: 2px solid #017DB3;
+    height: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #017DB3;
+    align-items: center;
+}
+
+/* Estilos al pasar el cursor sobre los enlaces y botones de la barra de navegación */
+nav a:hover,
+button:hover {
+    color: rgb(0, 0, 0);
+    background-color: #8CD4EA;
+    border-color: #006c9b;
+}
+
+/* Estilos para la línea de separación en la barra de navegación */
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 4px 0;
+}
+
+/* Estilos para el contenido del menú desplegable */
+#dropdown-content:target {
+    display: block;
+    background-color: #017DB3;
+}
+
+.dropdown-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin: 0px;
+    top: 0px;
+    border: 2px solid #006c9b;
+}
+
+/* Estilos para el botón de búsqueda */
+#buscar {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transform: scale(0.9);
+}
+
+#buscar:hover {
+    background-color: #8CD4EA;
+}
+
+#buscar i {
+    font-size: 15px;
+}
+
+/* Estilos para el ícono de cierre en el menú desplegable */
+li a[href="#close"] i {
+    color: #000000;
+}
+
+/* Estilos para los elementos de la lista en el menú desplegable */
+.dropdown-content li {
+    display: flex;
+}
+
+/* Estilos para el contenido "medio" en el menú desplegable */
+.dropdown-content .medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/* Estilos para los artículos */
+article {
+    width: 70%;
+}
+
+/* Estilos para la barra lateral */
+aside {
+    width: 25%;
+    margin-left: 40px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #017DB3;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los enlaces en el pie de página */
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Estilos para el enlace "subir" en el pie de página */
+footer a[href="#subir"]::before {
+    content: "\2191";
+    margin-right: 5px;
+}
+
+/* Estilos para los iframes */
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/* Estilos para las líneas y las imágenes */
+hr,
+img {
+    border: 1px solid #8CD4EA;
+    width: 50%;
+}
+
+/* Estilos para las imágenes */
+img {
+    margin-left: 25%;
+}
+
+/* Estilos para los párrafos en el pie de página */
+footer p {
+    padding-right: 20px;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: inherit;
+}
+
+/* Animación para mover el contenido hacia un lado */
+@keyframes moveAside {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Estilos para las listas ordenadas */
+ol {
+    width: 80%;
+    height: 30%;
+    margin-left: 20px;
+    animation: moveAside 5s;
+    background-color: #017DB3;
+    padding: 10%;
+}
+
+/* Estilos para las listas de definición */
+dl {
+    width: 70%;
+    height: 20%;
+    margin-left: 20px;
+    animation: moveAside 5s;
+    background-color: #017DB3;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Estilos para los términos en las listas de definición */
+dt {
+    margin-top: 15px;
+}
+
+/* Animación para mover la flecha hacia arriba */
+@keyframes moveArrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el enlace "top" en el pie de página */
+footer a[href="#top"] {
+    display: inline-block;
+    animation: moveArrow 2s infinite;
+}
+
+/* Estilos para el encabezado */
+header {
+    color: white;
+}
+
+/* Estilos para las listas no ordenadas */
+ul {
+    color: white;
+    list-style: none;
+}
+
+/* Estilos para la clase "cuesta" */
+.cuesta {
+    width: 25%;
+    margin-left: 35%;
+}
+
+/* Estilos para la clase "icuesta" */
+.icuesta {
+    width: 50%;
+    float: right;
+    margin-left: 20px;
+}
+
+/* Estilos para el elemento con el id "webcuesta" */
+#webcuesta {
+    width: 40%;
+    height: 32%;
+    float: left;
+}
+
+/* Estilos para el elemento con el id "sinfondo" */
+#sinfondo {
+    background-color: transparent !important;
+}
